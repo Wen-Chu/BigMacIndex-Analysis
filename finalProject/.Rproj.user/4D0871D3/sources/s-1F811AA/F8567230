@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592825616509.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "F8567230",
+    "lastKnownWriteTime" : 8026363914660965410,
+    "last_content_update" : 1592825616509,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "D55EF6AD",
+        "caption" : "PValue_df",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=PValue_df&cache_key=D55EF6AD",
+        "displayedObservations" : 10,
+        "environment" : "",
+        "expression" : "PValue_df",
+        "object" : "PValue_df",
+        "preview" : 0,
+        "totalObservations" : 10,
+        "variables" : 2
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

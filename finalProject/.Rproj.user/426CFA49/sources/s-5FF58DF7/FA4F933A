@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592585569202.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2612924701",
+    "id" : "FA4F933A",
+    "lastKnownWriteTime" : 1592670869,
+    "last_content_update" : 1592670869803,
+    "path" : "C:/KATHY_LIFE/1082CGU/R/finalProject/DataClean.R",
+    "project_path" : "DataClean.R",
+    "properties" : {
+        "cursorPosition" : "55,0",
+        "scrollLine" : "32",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

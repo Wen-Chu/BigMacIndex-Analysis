@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592669265295.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EA278A8C",
+    "lastKnownWriteTime" : 7164436678857924669,
+    "last_content_update" : 1592669265295,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "D102A8AD",
+        "caption" : "combine2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=combine2&cache_key=D102A8AD",
+        "displayedObservations" : "728",
+        "environment" : "",
+        "expression" : "combine2",
+        "object" : "combine2",
+        "preview" : "0",
+        "totalObservations" : "728",
+        "variables" : "21"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

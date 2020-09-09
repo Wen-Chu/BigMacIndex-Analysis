@@ -1,0 +1,29 @@
+#dollar_ex = 係數*BMindex + 係數*GDP + 係數*inflationByCpi + (常數項)
+All_BMindex <- round(summary(Whole_AIC) $coefficients [2][1],2) 
+All_GDP <- round(summary(Whole_AIC) $coefficients [3][1],2) 
+All_inflationByCpi <- round(summary(Whole_AIC) $coefficients [4][1],2) 
+All_Intercept <- round(summary(Whole_AIC) $coefficients [1][1],2) 
+#dollar_ex = All_BMindex*(帶BMindex數據) + (All_GDP)*(帶GDP數據) + 
+#           (All_inflationByCpi)*(帶inflationByCpi數據) + All_Intercept
+#START! Fighting GOGO!!
+
+#最多Country == "Brazil"
+#最少Country == "Britain"
+
+Brazil_plot <- filter(yangwc, Country == "Brazil")
+Britain_plot <- filter(yangwc, Country == "Britain")
+Brazil_plot$reg_ex <- All_BMindex*Brazil_plot$BMindex + All_GDP*Brazil_plot$GDP + All_inflationByCpi*Brazil_plot$inflationByCpi + All_Intercept 
+Britain_plot$reg_ex <- All_BMindex*Britain_plot$BMindex + All_GDP*Britain_plot$GDP + All_inflationByCpi*Britain_plot$inflationByCpi + All_Intercept 
+
+
+library(ggplot2)
+ggplot(Brazil_plot, aes(x=Year))+
+  geom_line(aes(y=dollar_ex, group=1, colour = 1))+
+  geom_line(aes(y=BMindex, group=1, colour = 2))+
+  geom_line(aes(y=reg_ex, group=1, colour = 3))+
+  labs(x="", y="匯率", title="巴西歷年匯率")
+ggplot(Britain_plot, aes(x=Year))+
+  geom_line(aes(y=dollar_ex, group=1))+
+  geom_line(aes(y=BMindex, group=1))+
+  geom_line(aes(y=reg_ex, group=1))+
+  labs(x="", y="匯率", title="英國歷年匯率")

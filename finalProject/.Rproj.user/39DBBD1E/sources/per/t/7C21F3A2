@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599626124435.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3197887247",
+    "id" : "7C21F3A2",
+    "lastKnownWriteTime" : 1599626385,
+    "last_content_update" : 1599626385901,
+    "path" : "D:/College/108-2/Big Data Analytical Methods/期末專題/finalProject/Continent_Plot.R",
+    "project_path" : "Continent_Plot.R",
+    "properties" : {
+        "cursorPosition" : "73,0",
+        "scrollLine" : "64"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

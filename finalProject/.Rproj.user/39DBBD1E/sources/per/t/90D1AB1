@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599626155977.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3769869429",
+    "id" : "90D1AB1",
+    "lastKnownWriteTime" : 1599625996,
+    "last_content_update" : 1599625996,
+    "path" : "D:/College/108-2/Big Data Analytical Methods/期末專題/finalProject/Mistake_Plot.R",
+    "project_path" : "Mistake_Plot.R",
+    "properties" : {
+        "cursorPosition" : "0,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

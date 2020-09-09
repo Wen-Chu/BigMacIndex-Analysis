@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599628610880.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "228400819",
+    "id" : "11723186",
+    "lastKnownWriteTime" : 1599628616,
+    "last_content_update" : 1599628616242,
+    "path" : "D:/College/108-2/Big Data Analytical Methods/期末專題/finalProject/Year_AIC.R",
+    "project_path" : "Year_AIC.R",
+    "properties" : {
+        "cursorPosition" : "0,13",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

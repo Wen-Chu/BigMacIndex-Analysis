@@ -1,0 +1,373 @@
+#用yangwc (參數沒有除美國的表)，裡面的所有參數(各國自己的、USA開頭的)做
+# 1. 全球全年 -> 1 個迴歸
+# 2. 全球各年 -> 19 個迴歸 (所有參數)
+# 3. 全球各年 -> 19 個迴歸 (參數：只有根據 1. 有星星的參數)
+# 4. {台、日、中、韓、港、新加坡、英、加拿大、俄羅斯、巴西}全年 -> 10個
+
+#1.
+Whole <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = yangwc)
+summary(Whole)
+
+#2.
+y2000 <- filter(yangwc, Year == 2000)
+y2000_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2000)
+summary(y2000_g)
+
+y2001 <- filter(yangwc, Year == 2001)
+y2001_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2001)
+summary(y2001_g)
+
+y2002 <- filter(yangwc, Year == 2002)
+y2002_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2002)
+summary(y2002_g)
+
+y2003 <- filter(yangwc, Year == 2003)
+y2003_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2003)
+summary(y2003_g)
+
+y2004 <- filter(yangwc, Year == 2004)
+y2004_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2004)
+summary(y2004_g)
+
+y2005 <- filter(yangwc, Year == 2005)
+y2005_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2005)
+summary(y2005_g)
+
+y2006 <- filter(yangwc, Year == 2006)
+y2006_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2006)
+summary(y2006_g)
+
+y2007 <- filter(yangwc, Year == 2007)
+y2007_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2007)
+summary(y2007_g)
+
+y2008 <- filter(yangwc, Year == 2008)
+y2008_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2008)
+summary(y2008_g)
+
+y2009 <- filter(yangwc, Year == 2009)
+y2009_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2009)
+summary(y2009_g)
+
+y2010 <- filter(yangwc, Year == 2010)
+y2010_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2010)
+summary(y2010_g)
+
+y2011 <- filter(yangwc, Year == 2011)
+y2011_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2011)
+summary(y2011_g)
+
+y2012 <- filter(yangwc, Year == 2012)
+y2012_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2012)
+summary(y2012_g)
+
+y2013 <- filter(yangwc, Year == 2013)
+y2013_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2013)
+summary(y2013_g)
+
+y2014 <- filter(yangwc, Year == 2014)
+y2014_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2014)
+summary(y2014_g)
+
+y2015 <- filter(yangwc, Year == 2015)
+y2015_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2015)
+summary(y2015_g)
+
+y2016 <- filter(yangwc, Year == 2016)
+y2016_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2016)
+summary(y2016_g)
+
+y2017 <- filter(yangwc, Year == 2017)
+y2017_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2017)
+summary(y2017_g)
+
+y2018 <- filter(yangwc, Year == 2018)
+y2018_g <- glm(dollar_ex~
+                 BMindex + GDP + GNI + age15_64 + Birth + 
+                 inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+                 usa_GNI + usa_age + usa_Birth + usa_inflation +
+                 usa_une + usa_eco,
+               data = y2018)
+summary(y2018_g)
+
+#3.
+y2000_s_g <- glm(dollar_ex~
+                 BMindex + inflationByCpi,
+               data = y2000)
+summary(y2000_s_g)
+
+y2001_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2001)
+summary(y2001_s_g)
+
+y2002_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2002)
+summary(y2002_s_g)
+
+y2003_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2003)
+summary(y2003_s_g)
+
+y2004_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2004)
+summary(y2004_s_g)
+
+y2005_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2005)
+summary(y2005_s_g)
+
+y2006_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2006)
+summary(y2006_s_g)
+
+y2007_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2007)
+summary(y2007_s_g)
+
+y2008_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2008)
+summary(y2008_s_g)
+
+y2009_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2009)
+summary(y2009_s_g)
+
+y2010_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2010)
+summary(y2010_s_g)
+
+y2011_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2011)
+summary(y2011_s_g)
+
+y2012_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2012)
+summary(y2012_s_g)
+
+y2013_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2013)
+summary(y2013_s_g)
+
+y2014_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2014)
+summary(y2014_s_g)
+
+y2015_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2015)
+summary(y2015_s_g)
+
+y2016_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2016)
+summary(y2016_s_g)
+
+y2017_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2017)
+summary(y2017_s_g)
+
+y2018_s_g <- glm(dollar_ex~
+                   BMindex + inflationByCpi,
+               data = y2018)
+summary(y2018_s_g)
+
+#4.
+twn <- filter(yangwc, Country == "Taiwan")
+twn_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = twn)
+summary(twn_g)
+
+jpn <- filter(yangwc, Country == "Japan")
+jpn_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = jpn)
+summary(jpn_g)
+
+chn <- filter(yangwc, Country == "China")
+chn_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = chn)
+summary(chn_g)
+
+kor <- filter(yangwc, Country == "South Korea")
+kor_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = kor)
+summary(kor_g)
+
+hkg <- filter(yangwc, Country == "Hong Kong")
+hkg_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = hkg)
+summary(hkg_g)
+
+sgp <- filter(yangwc, Country == "Singapore")
+sgp_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = sgp)
+summary(sgp_g)
+
+gbr <- filter(yangwc, Country == "Britain")
+gbr_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = gbr)
+summary(gbr_g)
+
+can <- filter(yangwc, Country == "Canada")
+can_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = can)
+summary(can_g)
+
+rus <- filter(yangwc, Country == "Russia")
+rus_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = rus)
+summary(rus_g)
+
+bra <- filter(yangwc, Country == "Brazil")
+bra_g <- glm(dollar_ex~
+               BMindex + GDP + GNI + age15_64 + Birth + 
+               inflationByCpi + unemployment + ecoGrowthRate + usa_GDP +
+               usa_GNI + usa_age + usa_Birth + usa_inflation +
+               usa_une + usa_eco,
+             data = bra)
+summary(bra_g)

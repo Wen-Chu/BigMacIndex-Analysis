@@ -1,0 +1,37 @@
+#dollar_ex = 係數*BMindex + 係數*GDP + 係數*GNI + 係數*age15_64 + 
+#            係數*Birth + 係數*inflationByCpi + 係數*unemployment + 
+#            係數*ecoGrowthRate+係數*usa_GDP + 係數*usa_GNI + 係數*usa_age + 
+#            係數*usa_inflation + 係數*usa_une + 係數*usa_eco + (常數項)
+Twn_BMindex <- round(summary(Taiwan_AIC) $coefficients [2][1],2)
+Twn_GDP <- round(summary(Taiwan_AIC) $coefficients [3][1],2)
+Twn_GNI <- round(summary(Taiwan_AIC) $coefficients [4][1],2)
+Twn_age15_64 <- round(summary(Taiwan_AIC) $coefficients [5][1],2)
+Twn_Birth <- round(summary(Taiwan_AIC) $coefficients [6][1],2)
+Twn_inflationByCpi <- round(summary(Taiwan_AIC) $coefficients [7][1],2)
+Twn_unemployment <- round(summary(Taiwan_AIC) $coefficients [8][1],2)
+Twn_ecoGrowthRate <- round(summary(Taiwan_AIC) $coefficients [9][1],2)
+Twn_usa_GDP <- round(summary(Taiwan_AIC) $coefficients [10][1],2)
+Twn_usa_GNI <- round(summary(Taiwan_AIC) $coefficients [11][1],2)
+Twn_usa_age <- round(summary(Taiwan_AIC) $coefficients [12][1],2)
+Twn_usa_inflation <- round(summary(Taiwan_AIC) $coefficients [13][1],2)
+Twn_usa_une <- round(summary(Taiwan_AIC) $coefficients [14][1],2)
+Twn_usa_eco <- round(summary(Taiwan_AIC) $coefficients [15][1],2)
+Twn_Intercept <- round(summary(Taiwan_AIC) $coefficients [1][1],2)
+##dollar_ex = Twn_BMindex*(帶BMindex數據) + Twn_GDP*(帶GDP數據) + Twn_GNI*(帶GNI數據) + Twn_age15_64*(帶age15_64數據) + 
+#            Twn_Birth*(帶Birth數據) + Twn_inflationByCpi*(帶inflationByCpi數據) + Twn_unemployment*(帶unemployment數據) + 
+#            Twn_usa_GDP*(帶usa_GDP數據) + Twn_usa_GNI*(帶usa_GNI數據) + 
+#            Twn_usa_inflation*(帶usa_inflation數據) + Twn_usa_une*(帶usa_une數據) + Twn_usa_eco*(帶usa_eco數據) + Twn_Intercept
+#START! Fighting GOGO!! 
+TW_plot <- filter(yangwc, Country == "Taiwan")
+TW_plot$reg_ex <- All_BMindex*TW_plot$BMindex + All_GDP*TW_plot$GDP + All_inflationByCpi*TW_plot$inflationByCpi + All_Intercept 
+TW_plot$regAIC_ex<- Twn_BMindex*TW_plot$BMindex + Twn_GDP*TW_plot$GDP + Twn_GNI*TW_plot$GNI+ Twn_age15_64*TW_plot$age15_64 +
+  Twn_Birth*TW_plot$Birth + Twn_inflationByCpi*TW_plot$inflationByCpi + Twn_unemployment*TW_plot$unemployment +
+  Twn_usa_GDP*TW_plot$usa_GDP + Twn_usa_GNI*TW_plot$usa_GNI + 
+  Twn_usa_inflation*TW_plot$usa_inflation + Twn_usa_une*TW_plot$usa_une + Twn_usa_eco*TW_plot$usa_eco + Twn_Intercept
+library(ggplot2)
+ggplot(TW_plot, aes(x=Year))+
+  geom_line(aes(y=dollar_ex, group=1, colour = 1))+
+  geom_line(aes(y=BMindex, group=1, colour = 2))+
+  geom_line(aes(y=reg_ex, group=1, colour = 3))+
+  geom_line(aes(y=regAIC_ex, group=1, colour = 4))+
+  labs(x="", y="匯率", title="台灣歷年匯率")

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599628580553.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3939834195",
+    "id" : "9D3EF007",
+    "lastKnownWriteTime" : 1599628590,
+    "last_content_update" : 1599628590508,
+    "path" : "D:/College/108-2/Big Data Analytical Methods/期末專題/finalProject/IQR_Plot.R",
+    "project_path" : "IQR_Plot.R",
+    "properties" : {
+        "cursorPosition" : "0,15",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

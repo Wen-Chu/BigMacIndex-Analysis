@@ -1,0 +1,25 @@
+a<-summary(twn_g)$coefficients[2,4] #台灣
+b<-summary(jpn_g)$coefficients[2,4] #日本
+c<-summary(chn_g)$coefficients[2,4] #中國
+d<-summary(kor_g)$coefficients[2,4] #南韓
+e<-summary(hkg_g)$coefficients[2,4] #香港
+f<-summary(sgp_g)$coefficients[2,4] #新加坡
+g<-summary(gbr_g)$coefficients[2,4] #英國
+h<-summary(can_g)$coefficients[2,4] #加拿大
+i<-summary(rus_g)$coefficients[2,4] #俄羅斯
+j<-summary(bra_g)$coefficients[2,4] #巴西
+#將以上十個值化成圖（x:國家名稱；y:p-value）
+#p-value就是上面那十個的值
+
+name<-c("台灣","日本","中國","南韓","香港","新加坡","英國","加拿大","俄羅斯","巴西")
+value<-c(a,b,c,d,e,f,g,h,i,j)
+PValue_df<-data.frame(x=name,value=value)
+
+library(ggplot2)
+ggplot()+
+  theme_classic()+
+  theme(plot.title=element_text(hjust = 0.5,face="bold",size=15,family = "A",color = 1))+
+  geom_bar(data=PValue_df,aes(x=x,y=value),
+           stat="identity")+
+  geom_hline(aes(yintercept=0.05))+
+  labs(x="國家名稱",y="P-value",title="各國P-value")

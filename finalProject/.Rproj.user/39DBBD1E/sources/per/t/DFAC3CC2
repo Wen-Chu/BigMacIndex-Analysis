@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1599626157524.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1561983487",
+    "id" : "DFAC3CC2",
+    "lastKnownWriteTime" : 1599628653,
+    "last_content_update" : 1599628653427,
+    "path" : "D:/College/108-2/Big Data Analytical Methods/期末專題/finalProject/Taiwan_Plot.R",
+    "project_path" : "Taiwan_Plot.R",
+    "properties" : {
+        "cursorPosition" : "0,15",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
